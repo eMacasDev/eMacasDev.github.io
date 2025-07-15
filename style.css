@@ -1,3 +1,11 @@
+header {
+    background-color: #111;
+    color: gold;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+
 
 body {
     font-family: 'Georgia', serif;
@@ -6,13 +14,6 @@ body {
     color: #111;
 }
 
-header {
-    background-color: #111;
-    color: gold;
-    padding: 1rem;
-    text-align: center;
-    position: relative;
-}
 
 .subtitulo {
     font-size: 1rem;
@@ -75,6 +76,14 @@ img {
     gap: 2rem;
     margin: 2rem 0;
 }
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #111;
+    color: gold;
+    margin-top: 4rem;
+}
+
 
 @media (max-width: 768px) {
     .menu {

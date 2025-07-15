@@ -5,29 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Esencia de Manabí</title>
     <link rel="stylesheet" href="style.css">
+
+    
 </head>
 <body>
-    <header>
-        <h1>Esencia de Manabí</h1>
-        <p class="subtitulo">Belleza natural hecha a mano, desde el corazón de Ecuador hasta tu piel.</p>
-        <button class="menu-btn" onclick="toggleMenu()">☰</button>
-        <nav id="menu" class="menu">
-            <a href="index.html">Inicio</a>
-            <a href="catalogo.html">Catálogo</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Bienvenidos</h2>
-            <p>Descubre nuestros productos artesanales de belleza, elaborados con ingredientes naturales y el amor de Manabí, ahora en Barcelona.</p>
-            <img src="imagenes/producto1.jpg" alt="Producto destacado">
-        </section>
-    </main>
-    <script>
-        function toggleMenu() {
-            document.getElementById("menu").classList.toggle("open");
-        }
-    </script>
+
+<header>
+    <div style="text-align: center; margin-top: 30px;">
+    <img src="imagenes/logo.jpg" alt="Logo" style="height: 100px;">
+    <hr style="width: 200px; margin: 10px auto;">
+    </div>
+    <h1>Esencia de Manabí</h1>
+    <p class="subtitulo">Belleza natural hecha a mano, desde el corazón de Ecuador hasta tu piel.</p>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <nav id="menu" class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+</header>
+
+<main>
+    <section style="padding: 60px 30px; background: url('imagenes/1.jpg') no-repeat center center/cover; color: white;">
+        <div style="background-color: rgba(0, 0, 0, 0.5); padding: 40px; max-width: 800px; border-radius: 10px;">
+            <h2 style="text-align: left;">Sobre la creadora</h2>
+            <p style="font-size: 1.2em; line-height: 1.6; text-align: left;">
+                Este espacio está dedicado a contar la historia detrás de nuestros productos.
+                La creadora, apasionada por el cuidado natural y artesanal, comenzó esta aventura
+                con el objetivo de compartir con el mundo su visión de la belleza.
+                Con ingredientes seleccionados y amor en cada fórmula, cada producto es un testimonio
+                de dedicación y creatividad.
+            </p>
+        </div>
+    </section>
+    
+
+
+    <section style="padding: 40px;">
+        <h2 style="text-align: center;">Productos Destacados</h2>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 20px;">
+            <div style="text-align: center;">
+                <img src="imagenes/2.jpg" alt="Producto 1" style="width: 200px; height: auto;">
+                <p>Nombre del Producto</p>
+            </div>
+            <!-- Puedes duplicar este bloque para más productos -->
+        </div>
+    </section>
+</main>
+
+<script>
+    function toggleMenu() {
+        document.getElementById("menu").classList.toggle("open");
+    }
+</script>
+<footer>
+    <p>&copy; 2025 Esencia de Manabí</p>
+</footer>
 </body>
 </html>
