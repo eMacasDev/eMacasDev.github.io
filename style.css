@@ -1,0 +1,89 @@
+
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    background: #fffaf5;
+    color: #111;
+}
+
+header {
+    background-color: #111;
+    color: gold;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+.subtitulo {
+    font-size: 1rem;
+    color: #fffacd;
+}
+
+.menu-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: gold;
+    cursor: pointer;
+    display: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.menu.static {
+    position: static;
+    justify-content: center;
+}
+
+.menu a {
+    color: gold;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu.open {
+    display: block;
+    flex-direction: column;
+    background: #222;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.producto {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+    .menu-btn {
+        display: block;
+    }
+    .producto {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esencia de Manabí</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Esencia de Manabí</h1>
+        <p class="subtitulo">Belleza natural hecha a mano, desde el corazón de Ecuador hasta tu piel.</p>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        <nav id="menu" class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Bienvenidos</h2>
+            <p>Descubre nuestros productos artesanales de belleza, elaborados con ingredientes naturales y el amor de Manabí, ahora en Barcelona.</p>
+            <img src="imagenes/producto1.jpg" alt="Producto destacado">
+        </section>
+    </main>
+    <script>
+        function toggleMenu() {
+            document.getElementById("menu").classList.toggle("open");
+        }
+    </script>
+</body>
+</html>
